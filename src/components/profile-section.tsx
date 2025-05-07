@@ -46,7 +46,7 @@ export function ProfileSection() {
               <span className="gradient-text">About Me</span>
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              I'm a passionate Full Stack Developer with expertise in building modern web applications.
+              I&apos;m a passionate Full Stack Developer with expertise in building modern web applications.
               With a strong foundation in both frontend and backend technologies, I create efficient,
               scalable, and user-friendly solutions.
             </p>

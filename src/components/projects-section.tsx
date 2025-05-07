@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ExternalLink, Github } from 'lucide-react'
+import Image from 'next/image'
 
 const projects = [
   {
@@ -84,11 +85,15 @@ export function ProjectsSection() {
               viewport={{ once: true }}
               className="group relative overflow-hidden rounded-lg border bg-card shadow-lg transition-all hover:shadow-xl"
             >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.image}
+              <div className="relative aspect-video overflow-hidden">
+                <Image
+                  src={`/${project.image}`}
                   alt={project.title}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="transition-transform duration-300 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  priority={index === 0}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>

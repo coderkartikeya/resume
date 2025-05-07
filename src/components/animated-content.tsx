@@ -34,7 +34,7 @@ export function AnimatedContent() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-3xl font-bold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]"
         >
-          Hi, I'm <span className="gradient-text">Kartikeya Vats</span>
+          Hi, I&apos;m <span className="gradient-text">Kartikeya Vats</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
